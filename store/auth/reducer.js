@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import {LOGIN, SOCIAL_LOGIN, LOGOUT } from '../../constants/actionTypes'
+import {LOGIN, SOCIAL_LOGIN, LOGOUT } from '/constants/actionTypes'
 
 const isLoggedIn = (state = false, action) => {
     switch (action.type) {
@@ -13,6 +13,7 @@ const isLoggedIn = (state = false, action) => {
             return state;
     }
 }
+
 const isLoggingIn = (state = false, action) => {
     switch (action.type) {
         case LOGIN.started:

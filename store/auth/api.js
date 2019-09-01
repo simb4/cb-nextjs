@@ -28,10 +28,6 @@ export const changePassword = (data, token) => (
   API.stdApiPOST({ token, data, url: changePasswordUrl })
 )
 
-export const uploadImage = (data, token) => (
-  API.apiFormData({ withImage: true, token, data, url: uploadImageUrl })
-)
-
 export const logout = (token) => (
   API.stdApiPOST({ token, url: logoutUrl })
 )

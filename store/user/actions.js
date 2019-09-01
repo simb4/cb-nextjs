@@ -22,13 +22,3 @@ export const updateProfile = (data, callbacks) => (dispatch, getState) => {
     callbacks: callbacks,
   })
 }
-
-export const uploadImage = (data, callbacks) => (dispatch, getState) => {
-  defaultAction(dispatch, getState, {
-    action: actionTypes.UPLOAD_IMAGE,
-    apiCall: () => { return userApi.uploadImage(data, getState().user.token) },
-    onSuccess: (response) => ({ image: response.image }),
-    onError: (response) => ({ errorMessage: response.message }),
-    callbacks: callbacks,
-  })
-}

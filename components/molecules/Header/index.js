@@ -5,7 +5,7 @@ import './index.scss'
 
 const Header = () => (
   <div className="header">
-    <div className="container d-flex justify-content-between pt-16 pb-16">
+    <div className="container fill_h d-flex justify-content-between align-items-center">
       <Link href="/">
         <div className='pointer header__logo d-flex align-items-center'>
           <img className="header__logo__img" src="../../../static/images/logo.png" alt=""/>

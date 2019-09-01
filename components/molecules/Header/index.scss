@@ -8,11 +8,15 @@
   color: white;
   z-index: 9999;
 
+  .container {
+    padding-bottom: 0;
+  }
+
   .header__logo {
 
     .header__logo__img {
-      width: 60px;
-      height: 60px;
+      width: 48px;
+      height: 48px;
     }
 
     .header__logo__text {
