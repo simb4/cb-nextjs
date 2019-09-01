@@ -1,0 +1,24 @@
+// Open Sans Fontface
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../static/fonts/ProximaNova-Regular.eot');
+  src: url('../static/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../static/fonts/ProximaNova-Regular.woff') format('woff'),
+  url('../static/fonts/ProximaNova-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('../static/fonts/ProximaNova-Semibold.eot');
+  src: url('../static/fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../static/fonts/ProximaNova-Semibold.woff') format('woff'),
+  url('../static/fonts/ProximaNova-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('../static/fonts/ProximaNova-Bold.eot');
+  src: url('../static/fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../static/fonts/ProximaNova-Bold.woff') format('woff'),
+  url('../static/fonts/ProximaNova-Bold.ttf') format('truetype');
+}

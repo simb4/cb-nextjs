@@ -1,0 +1,33 @@
+@import '../../../styles/vars.scss';
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: $main_blue;
+  color: white;
+  z-index: 9999;
+
+  .header__logo {
+
+    .header__logo__img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .header__logo__text {
+      .header__logo__text-title {
+        line-height: 25px;
+      }
+
+      .header__logo__text-description {
+        line-height: 17px;
+        letter-spacing: 0.0015em;
+      }
+    }
+  }
+
+  .header__store-logo {
+    height: 44px;
+  }
+}

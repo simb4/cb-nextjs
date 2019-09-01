@@ -1,0 +1,24 @@
+.footer {
+  background: #04162A;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.03);
+  padding: 60px 0 32px;
+
+  .footer__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer_list-menu {
+
+    .footer_list-menu__link {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.0015em;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

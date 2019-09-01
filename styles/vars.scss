@@ -1,0 +1,53 @@
+// Family fonts
+$fonts: 'Proxima Nova', sans-serif;
+
+// colors
+$dark_blue: #003abf;
+$light_blue: #7490FF;
+$main_blue: #2B63F3;
+$dark_red: #C85A54;
+$light_red: #FFBCAF;
+$main_red: #FF8A80;
+$dark_hint: #747473;
+$light_hint: #DDDEDE;
+$hint: #9B9B9B;
+$black: #0D0D0D;
+$white: #ffffff;
+$light_grey: #f3f3f3;
+
+// Mapped colors
+$colors: (
+  dark_blue: $dark_blue,
+  light_blue: $light_blue,
+  blue: $main_blue,
+  dark_red: $dark_red,
+  light_red: $light_red,
+  main_red: $main_red,
+  dark_hint: $dark_hint,
+  light_hint: $light_hint,
+  hint: $hint,
+  black: $black,
+  white: $white,
+  light_grey: $light_grey
+);
+
+// Typography
+$h1_size: 3rem;
+$h2_size: 2rem;
+$h3_size: 1.5em;
+$h4_size: 1.25em;
+$body_size: 1em;
+$sub_body_size: 0.875rem;
+$caption_size: 0.625rem;
+
+$bold_weight: 700;
+$regular_weight: 400;
+$light_weight: 300;
+
+// Responsive layouts
+$small_device: 576px;
+$medium_device: 768px;
+$large_device: 992px;
+$extra_large_device: 1200px;
+$header-height: 92px;
+$footer-height: 372px;

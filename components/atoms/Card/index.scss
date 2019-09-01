@@ -1,0 +1,15 @@
+@import '../../../styles/vars.scss';
+
+.card {
+  background: white;
+  border: 2px solid $light_grey;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 16px;
+  &.active {
+    border-color: $light_blue;
+  }
+  &.clickable {
+    cursor: pointer;
+  }
+}

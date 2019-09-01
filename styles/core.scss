@@ -1,0 +1,340 @@
+@import './vars.scss';
+
+.d-none {
+  display: none;
+}
+
+// Flex
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.d-inline-flex {
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+.flex-row {
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+}
+
+.flex-column {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+
+.flex-row-reverse {
+  -ms-flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
+}
+
+.flex-column-reverse {
+  -ms-flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+}
+
+.flex-nowrap {
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+
+.flex-wrap-reverse {
+  -ms-flex-wrap: wrap-reverse !important;
+  flex-wrap: wrap-reverse !important;
+}
+
+.flex-fill {
+  -ms-flex: 1 1 auto !important;
+  flex: 1 1 auto !important;
+}
+
+.flex-grow-0 {
+  -ms-flex-positive: 0 !important;
+  flex-grow: 0 !important;
+}
+
+.flex-grow-1 {
+  -ms-flex-positive: 1 !important;
+  flex-grow: 1 !important;
+}
+
+.flex-shrink-0 {
+  -ms-flex-negative: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+.flex-shrink-1 {
+  -ms-flex-negative: 1 !important;
+  flex-shrink: 1 !important;
+}
+
+.justify-content-start {
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+.justify-content-end {
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.justify-content-around {
+  -ms-flex-pack: distribute !important;
+  justify-content: space-around !important;
+}
+
+.align-items-start {
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+
+.align-items-end {
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.align-items-baseline {
+  -ms-flex-align: baseline !important;
+  align-items: baseline !important;
+}
+
+.align-items-stretch {
+  -ms-flex-align: stretch !important;
+  align-items: stretch !important;
+}
+
+.align-content-start {
+  -ms-flex-line-pack: start !important;
+  align-content: flex-start !important;
+}
+
+.align-content-end {
+  -ms-flex-line-pack: end !important;
+  align-content: flex-end !important;
+}
+
+.align-content-center {
+  -ms-flex-line-pack: center !important;
+  align-content: center !important;
+}
+
+.align-content-between {
+  -ms-flex-line-pack: justify !important;
+  align-content: space-between !important;
+}
+
+.align-content-around {
+  -ms-flex-line-pack: distribute !important;
+  align-content: space-around !important;
+}
+
+.align-content-stretch {
+  -ms-flex-line-pack: stretch !important;
+  align-content: stretch !important;
+}
+
+.align-self-auto {
+  -ms-flex-item-align: auto !important;
+  align-self: auto !important;
+}
+
+.align-self-start {
+  -ms-flex-item-align: start !important;
+  align-self: flex-start !important;
+}
+
+.align-self-end {
+  -ms-flex-item-align: end !important;
+  align-self: flex-end !important;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+.align-self-baseline {
+  -ms-flex-item-align: baseline !important;
+  align-self: baseline !important;
+}
+
+.align-self-stretch {
+  -ms-flex-item-align: stretch !important;
+  align-self: stretch !important;
+}
+
+// Fonts
+.font {
+  font-family: $fonts;
+}
+
+// Sizing
+.fill_w {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.fill_h {
+  height: 100%;
+}
+.fill {
+  @extend .fill_h;
+  @extend .fill_w;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+.pos_relative {
+  position: relative;
+}
+.pos_absolute {
+  position: absolute;
+}
+.pos_static {
+  position: static;
+}
+
+.clear_float {
+  clear: both;
+}
+.clear_float_after:after {
+  content: '';
+  display: block;
+  @extend .clear_float;
+}
+.clear {
+  margin: 0;
+  padding: 0;
+}
+
+// Decorations
+.pointer {
+  cursor: pointer;
+}
+
+// Color plates
+$colors_prefix: 'color';
+@each $key, $value in $colors {
+  // example: color_red
+  .#{$colors_prefix}_#{$key} {
+    color: $value;
+  };
+  // example: color_red__bg
+  .#{$colors_prefix}_#{$key}__bg {
+    background-color: $value;
+  };
+}
+
+$use-bootstrap: false;
+
+// margin and padding values array
+$space-values : (
+  0,
+  4,
+  8,
+  12,
+  16,
+  24,
+  32,
+  48,
+  64,
+) !default;
+
+// margin and padding shorthands
+$space-prefixes : (
+  p  : padding,
+  pt : padding-top,
+  pr : padding-right,
+  pb : padding-bottom,
+  pl : padding-left,
+  m  : margin,
+  mt : margin-top,
+  mr : margin-right,
+  mb : margin-bottom,
+  ml : margin-left,
+) !default;
+
+// change these values if its not imported into bootstrap
+$grid-breakpoints-custom: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 480px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 960px,
+  // Extra large screen / wide desktop
+  xl: 1280px
+) !default;
+
+$breakpoints : $grid-breakpoints-custom;
+@if $use-bootstrap {
+  $breakpoints : $grid-breakpoints;
+}
+
+// main function definition
+@mixin make-space($values, $prefixes, $breakpoints) {
+  // without media queries
+  @each $attr-short, $attr-long in $prefixes {
+    @each $value in $values {
+      .#{$attr-short}-#{$value} {
+        #{$attr-long}: #{$value}#{'px!important'};
+      }
+    }
+  }
+  @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    // if xs value = 0, set it global without media queries
+    @if($breakpoint-value == 0) {
+      @each $attr-short, $attr-long in $prefixes {
+        @each $value in $values {
+          .#{$breakpoint-name}-#{$attr-short}-#{$value} {
+            #{$attr-long}: #{$value}#{'px!important'};
+          }
+        }
+      }
+    }
+      // breakpoint values that not equal to 0
+    @else {
+      @media screen and (min-width: $breakpoint-value) {
+        @each $attr-short, $attr-long in $prefixes {
+          @each $value in $values {
+            .#{$breakpoint-name}-#{$attr-short}-#{$value} {
+              #{$attr-long}: #{$value}#{'px!important'};
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include make-space($space-values, $space-prefixes, $breakpoints);

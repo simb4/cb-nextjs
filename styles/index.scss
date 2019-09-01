@@ -1,0 +1,127 @@
+@import "vars";
+@import "vendor";
+@import "core";
+@import "typography";
+
+body, html {
+  @extend .fill;
+  @extend .clear;
+  @extend .font;
+  color: $white;
+  background-color: $white;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.layout {
+  margin-top: $header-height;
+  height: calc(100vh - #{$header-height});
+}
+
+.header {
+  position: fixed;
+  height: $header-height;
+  overflow: hidden;
+}
+
+.semicontainer {
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .semicontainer {
+    width: calc(100% - (100% - 540px) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .semicontainer {
+    width: calc(100% - (100% - 720px) / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .semicontainer {
+    width: calc(100% - (100% - 960px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .semicontainer {
+    width: calc(100% - (100% - 1140px) / 2);
+  }
+}
+
+#root {
+  @extend .fill;
+  @extend .clear;
+}
+
+*::selection {
+  color: black;
+  background: $hint;
+}
+
+img::selection {
+  background: 0;
+}
+
+// text sizing
+p, a, button {
+  @extend .clear;
+  @extend .font;
+  font-size: $body_size;
+  font-weight: $regular_weight;
+  text-decoration: none;
+}
+li, ol, ul, span {
+  @extend .clear;
+  @extend .font;
+  font-size: $body_size;
+  font-weight: $regular_weight;
+  list-style: none;
+}
+
+// Button
+button {
+  @extend .pointer;
+  border: 0;
+  outline: 0;
+  background: 0;
+}
+
+.disabled {
+  background: $light_hint;
+  user-select: none !important;
+  pointer-events: none !important;
+}
+
+// Inputs
+input {
+  border: 0;
+  outline: 0;
+  background: 0;
+}
