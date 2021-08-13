@@ -7,7 +7,7 @@
     "classnames": "^2.2.6",
     "moment": "^2.22.2",
     "moment-timezone": "^0.5.23",
-    "next": "^9.0.3",
+    "next": "^11.1.0",
     "next-redux-wrapper": "^3.0.0-alpha.3",
     "node-sass": "^4.7.2",
     "react": "^16.9.0",
